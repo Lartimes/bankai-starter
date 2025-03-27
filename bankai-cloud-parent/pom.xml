@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>../bankai-common</module>
+        <module>../bankai-core</module>
     </modules>
 
     <properties>

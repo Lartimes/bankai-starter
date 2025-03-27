@@ -1,0 +1,8 @@
+org.springframework.context.ApplicationListener=\
+bankai.shizuku.ichigo.listener.StartEventListener
+org.springframework.boot.env.EnvironmentPostProcessor=\
+bankai.shizuku.ichigo.env.BankaiConfigDataMissingEnvironmentPostProcessor
+org.springframework.boot.diagnostics.FailureAnalyzer=\
+bankai.shizuku.ichigo.env.BankaiConfigDataMissingEnvironmentPostProcessor.ImportExceptionFailureAnalyzer
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+bankai.shizuku.ichigo.BankaiBaseAutoConfiguration
