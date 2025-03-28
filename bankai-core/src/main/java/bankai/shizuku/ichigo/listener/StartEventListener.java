@@ -6,6 +6,7 @@ import org.springframework.boot.web.context.WebServerInitializedEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.core.Ordered;
 import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import java.util.Objects;
@@ -13,6 +14,7 @@ import java.util.Objects;
 /**
  * 启动事件监听器
  */
+@Component
 public class StartEventListener implements ApplicationListener<WebServerInitializedEvent>, Ordered {
 
     private static final Logger LOG = LoggerFactory.getLogger(StartEventListener.class);

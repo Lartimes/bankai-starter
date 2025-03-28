@@ -1,5 +1,7 @@
-org.springframework.context.ApplicationListener=\
-bankai.shizuku.ichigo.listener.StartEventListener
+#org.springframework.context.ApplicationListener=\
+#bankai.shizuku.ichigo.listener.StartEventListener
+
+
 org.springframework.boot.env.EnvironmentPostProcessor=\
 bankai.shizuku.ichigo.env.BankaiConfigDataMissingEnvironmentPostProcessor
 org.springframework.boot.diagnostics.FailureAnalyzer=\

@@ -13,6 +13,7 @@ public class BankaiConfigDataMissingEnvironmentPostProcessor extends ConfigDataM
     public static final String PREFIX = "spring.cloud.bankai.config";
     public static final int ORDER = ConfigDataEnvironmentPostProcessor.ORDER + 888;
 
+
     @Override
     public int getOrder() {
         return ORDER;
@@ -28,6 +29,8 @@ public class BankaiConfigDataMissingEnvironmentPostProcessor extends ConfigDataM
         boolean importCheckEnabled = environment.getProperty(
                 PREFIX + ".import-check.enabled", Boolean.class,
                 true);
+        System.out.println(configEnabled);
+        System.out.println(importCheckEnabled);
         return configEnabled && importCheckEnabled;
     }
 

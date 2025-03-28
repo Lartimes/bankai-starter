@@ -7,12 +7,14 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.lang.Nullable;
+import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
 /**
  * Spring 工具类
  */
+@Component
 public class SpringUtilInstance implements ApplicationContextAware {
 
     private static ApplicationContext applicationContext;
